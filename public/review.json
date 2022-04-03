@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "emma",
+        "review": "I completely love this site, found it on EBay at first now I just order directly through them...I am always complemented on my outfits I will be back for more...Thank you for having cute trendy clothes that fit and look good.",
+        "rating": 5,
+        "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
+    },
+    {
+        "id": "2",
+        "name": "kelly",
+        "review": "This is my very first order through site, and I am totally and completely satisfied! The fit is great and so are the prices. I will definitely return again and again...",
+        "rating": 4,
+        "img": "https://randomuser.me/api/portraits/women/56.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Diana Jacobs",
+        "review": "I just got my first order and I have one word WOW!!!! Love, Love, Love these cloths!! I had my doubts before I ordered because most sites plus size cloths are too small and I'm usually disappointment, but not this time!! The shipping was also really fast1 only took about 9 days to get to me. Love it!! I'll be back to buy more. For Sure!",
+        "rating": 4,
+        "img": "https://randomuser.me/api/portraits/women/94.jpg"
+    },
+    {
+        "id": "4",
+        "name": "Anita Horton",
+        "review": "OMG..great store !!! Found this store while visiting the UK.. what a find -nice clothing/well made/great prices. I never find anything I Iike in US plus size stores but I could have filled another suitcase in Yours* Will be shopping on this site from now on... please come to the US !!!",
+        "rating": 5,
+        "img": "https://randomuser.me/api/portraits/women/50.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Annie Gregory",
+        "review": "I love the clothes from this website!! I am so glad I found them.....everything has been spot on, fits wonderfully, styles are trendy and lots to choose from!! Thanks for being here for us!!!",
+        "rating": 5,
+        "img": "https://randomuser.me/api/portraits/women/49.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Rosemary Brown",
+        "review": "I can't even express how excited I was when your delivery arrived. Such well made, adorable clothing, the sizing is amazing, the pants fit so very well which is saying a lot when you are over a size US 24, even the undies fit so well!!! Amazing. I'm ordering again right now. Thank you! Please bring brick and mortar stores to the United States!!!!",
+        "rating": 4,
+        "img": "https://randomuser.me/api/portraits/women/71.jpg"
+    }
+]

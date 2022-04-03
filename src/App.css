@@ -1,6 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  /* background: #EDEDED; */
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -32,6 +36,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
