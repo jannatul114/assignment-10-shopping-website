@@ -1,12 +1,15 @@
-# Getting Started with Create React App
+# Shopping-website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live website link: [https://shopping-website-project-mithila.netlify.app/](https://shopping-website-project-mithila.netlify.app/).
 
-## Available Scripts
+## About my project
 
-In the project directory, you can run:
+* This is a shopping releted site
+* This site is made with css framework tailwind
+* To make this site I used: react, react-router, rechart, fontawesome etc.
+* It is also mobile responsive.
 
-### `npm start`
+<!-- ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -67,4 +70,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
