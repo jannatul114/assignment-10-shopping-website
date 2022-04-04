@@ -8,7 +8,6 @@ const Header = () => {
         { id: 4, name: 'Reviews', link: '/reviews' },
         { id: 7, name: 'DashBoard', link: '/dashBoard' },
         { id: 9, name: 'Blogs', link: '/blogs' },
-        { id: 9, name: 'About', link: '/about' },
     ]
     return (
         <div>

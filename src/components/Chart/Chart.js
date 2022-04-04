@@ -43,13 +43,13 @@ const Chart = () => {
     return (
         <div className='flex justify-center w-full my-3 '>
             <div>
-                <div className='flex lg:flex-row md:flex-row sm:flex-col'>
+                <div className='flex lg:flex-row md:flex-col sm:flex-col'>
                     <div className='mr-8'>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month Wise Sell</h1>
 
                         <LineChart
                             width={500}
-                            height={400}
+                            height={300}
                             data={data}
                             margin={{
                                 top: 5,
@@ -64,21 +64,21 @@ const Chart = () => {
                             <Tooltip />
                             <Legend />
                             <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
-                            <Line type="monotone" dataKey="investment" stroke="#82ca9d" />
+
                         </LineChart>
 
                     </div>
 
                     <div>
-                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Sell Vs Investment</h1>
+                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month wise Revenue</h1>
                         <AreaChart
                             width={500}
-                            height={400}
+                            height={300}
                             data={data}
                             margin={{
                                 top: 10,
                                 right: 30,
-                                left: 0,
+                                left: 13,
                                 bottom: 0,
                             }}
                         >
@@ -86,7 +86,7 @@ const Chart = () => {
                             <XAxis dataKey="month" />
                             <YAxis />
                             <Tooltip />
-                            <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
+                            <Area type="monotone" dataKey="revenue" stroke="#8884d8" fill="#8884d8" />
                         </AreaChart>
 
                     </div>
@@ -96,7 +96,7 @@ const Chart = () => {
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
                         <BarChart
                             width={500}
-                            height={400}
+                            height={300}
                             data={data}
                             margin={{
                                 top: 5,
@@ -117,7 +117,7 @@ const Chart = () => {
 
                     <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
-                        <PieChart width={450} height={450}>
+                        <PieChart width={350} height={350}>
                             <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
                             <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
                             <Tooltip></Tooltip>
