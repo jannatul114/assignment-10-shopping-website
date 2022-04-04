@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const HomeReview = ({ getReview }) => {
 
@@ -10,7 +11,7 @@ const HomeReview = ({ getReview }) => {
 
     return (
 
-        <div className="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg my-3">
+        <div className="flex flex-col items-center justify-center bg-blue-100 p-4 shadow rounded-lg my-3">
             <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
                 <img src={img}
                     alt=""
@@ -22,6 +23,13 @@ const HomeReview = ({ getReview }) => {
                 {review}
             </p>
             <p><small>Ratings: {rating}</small></p>
+            <p className='text-yellow-500'>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faStar}></FontAwesomeIcon>
+            </p>
         </div>
 
     );
