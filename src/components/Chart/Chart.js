@@ -1,72 +1,128 @@
 import React from 'react';
-import { Area, AreaChart, CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Chart = () => {
     const data = [
         {
             month: "Mar",
             investment: 100000,
-            sell: 241,
-            revenue: 10401
+            sell: 10000,
+            revenue: 60401
         },
         {
             month: "Apr",
             investment: 200000,
-            sell: 423,
+            sell: 119923,
             revenue: 24500
         },
         {
             month: 'May',
             investment: 500000,
-            sell: 726,
+            sell: 689426,
             revenue: 67010
         },
         {
             month: "Jun",
             investment: 500000,
-            sell: 529,
+            sell: 666829,
             revenue: 40405
         },
         {
             month: "Jul",
             investment: 600000,
-            sell: 601,
+            sell: 758901,
             revenue: 50900
         },
         {
             month: "Aug",
             investment: 700000,
-            sell: 670,
+            sell: 887580,
             revenue: 61000
         }
     ]
     return (
-        <div className=' w-full my-3'>
-            <div className='flex lg:flex-row md:flex-row sm:flex-col'>
-                <div>
-                    <LineChart width={500} height={500} data={data}>
-                        <Line dataKey={"sell"}></Line>
-                        <YAxis></YAxis>
-                        <XAxis dataKey={'month'}></XAxis>
-                        <Tooltip></Tooltip>
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                    </LineChart>
+        <div className='flex justify-center w-full my-3 '>
+            <div>
+                <div className='flex lg:flex-row md:flex-row sm:flex-col'>
+                    <div>
+                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month Wise Sell</h1>
+
+                        <LineChart
+                            width={500}
+                            height={400}
+                            data={data}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="month" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
+                            <Line type="monotone" dataKey="investment" stroke="#82ca9d" />
+                        </LineChart>
+
+                    </div>
+
+                    <div>
+                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Sell Vs Investment</h1>
+                        <AreaChart
+                            width={500}
+                            height={400}
+                            data={data}
+                            margin={{
+                                top: 10,
+                                right: 30,
+                                left: 0,
+                                bottom: 0,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="month" />
+                            <YAxis />
+                            <Tooltip />
+                            <Area type="monotone" dataKey="sell" stroke="#8884d8" fill="#8884d8" />
+                        </AreaChart>
+
+                    </div>
                 </div>
-                <div>
-                    <AreaChart width={500} height={500} data={data}>
-                        <Area dataKey={"investment"}></Area>
-                        <XAxis dataKey={"month"}></XAxis>
-                        <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-                            <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-                        </linearGradient>
-                        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <Tooltip></Tooltip>
-                        <YAxis></YAxis>
-                        <Area type="monotone" dataKey="uv" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
-                        <Area type="monotone" dataKey="pv" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
-                    </AreaChart>
+                <div className='flex lg:flex-row md:flex-row sm:flex-col my-6'>
+                    <div>
+                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
+                        <BarChart
+                            width={500}
+                            height={400}
+                            data={data}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="month" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Bar dataKey="investment" fill="#8884d8" />
+                            <Bar dataKey="revenue" fill="#82ca9d" />
+                        </BarChart>
+                    </div>
+
+                    <div>
+                        <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
+                        <PieChart width={450} height={450}>
+                            <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                            <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                            <Tooltip></Tooltip>
+                        </PieChart>
+                    </div>
                 </div>
             </div>
         </div>

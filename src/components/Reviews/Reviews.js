@@ -10,7 +10,7 @@ const Reviews = () => {
         <div>
             <h1 className='text-4xl font-semibold my-5 text-blue-700'>What Customers Says About Us</h1>
             <div className='flex justify-center my-8'>
-                <div className='container grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4 mt-9'>
+                <div className='container grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-12 mt-9'>
                     {
                         reviews.map(review =>
                             <div className="flex flex-col items-center justify-center bg-blue-100 p-4 shadow rounded-lg my-3">
