@@ -91,7 +91,7 @@ const Chart = () => {
 
                     </div>
                 </div>
-                <div className='flex lg:flex-row md:flex-row sm:flex-col my-6'>
+                <div className='flex lg:flex-row md:flex-row sm:flex-col my-8'>
                     <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
                         <BarChart
