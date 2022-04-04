@@ -14,7 +14,7 @@ const Reviews = () => {
                     {
                         reviews.map(review =>
                             <div className="flex flex-col items-center justify-center bg-blue-100 p-4 shadow rounded-lg my-3 border-gray-700 border-4 ">
-                                <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40 border-gray-700 border-4">
+                                <div className="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40 border-gray-700 border-4">
                                     <img src={review.img}
                                         alt=""
                                         className="h-full w-full" />
