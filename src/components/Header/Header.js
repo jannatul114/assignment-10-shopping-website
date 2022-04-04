@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
-import Home from '../Home/Home';
 import { MenuIcon, XIcon } from '@heroicons/react/solid';
-import Link from '../Links/Links';
 import Links from '../Links/Links';
-
-
-
 const Header = () => {
     const [open, setOpen] = useState(false);
     const routes = [
@@ -21,14 +16,12 @@ const Header = () => {
                 <div onClick={() => setOpen(!open)} className='w-6 h-6 md:hidden'>
                     {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
                 </div>
-
                 <div className={`md:flex justify-center absolute md:static duration-500 ease-in bg-blue-500 w-full ${open ? 'top-8' : 'top-[-150px]'} sm:bg-blue-500`} >
                     {
                         routes.map(route => <Links routes={route} key={route.id}></Links>)
                     }
                 </div>
             </nav>
-
         </div>
     );
 };

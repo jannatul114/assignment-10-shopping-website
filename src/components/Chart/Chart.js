@@ -44,7 +44,7 @@ const Chart = () => {
         <div className='flex justify-center w-full my-3 '>
             <div>
                 <div className='flex lg:flex-row md:flex-row sm:flex-col'>
-                    <div>
+                    <div className='mr-8'>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month Wise Sell</h1>
 
                         <LineChart
