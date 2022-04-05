@@ -41,14 +41,13 @@ const Chart = () => {
         }
     ]
     return (
-        <div className='flex justify-center w-full my-3 '>
-            <div>
-                <div className='flex lg:flex-row md:flex-col sm:flex-col'>
-                    <div className='mr-8'>
+        <div className='flex justify-center my-8'>
+            <div className='container grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-2 gap-12 mt-9 sm:container'>
+                <div className='flex flex-col items-center justify-center bg-blue-100 p-2 mx-3 shadow rounded-lg my-3 '>
+                    <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month Wise Sell</h1>
-
                         <LineChart
-                            width={500}
+                            width={330}
                             height={300}
                             data={data}
                             margin={{
@@ -66,13 +65,16 @@ const Chart = () => {
                             <Line type="monotone" dataKey="sell" stroke="#8884d8" activeDot={{ r: 8 }} />
 
                         </LineChart>
-
                     </div>
 
+
+                </div>
+                <div className='flex flex-col items-center justify-center bg-blue-100 p-2 mx-3 shadow rounded-lg my-3 '>
                     <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Month wise Revenue</h1>
+
                         <AreaChart
-                            width={500}
+                            width={330}
                             height={300}
                             data={data}
                             margin={{
@@ -88,15 +90,16 @@ const Chart = () => {
                             <Tooltip />
                             <Area type="monotone" dataKey="revenue" stroke="#8884d8" fill="#8884d8" />
                         </AreaChart>
-
                     </div>
+
                 </div>
-                <div className='flex lg:flex-row md:flex-row sm:flex-col my-8'>
+                <div className='flex flex-col items-center justify-center bg-blue-100 p-2 mx-3 shadow rounded-lg my-3 '>
                     <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
+
                         <BarChart
-                            width={500}
-                            height={300}
+                            width={300}
+                            height={330}
                             data={data}
                             margin={{
                                 top: 5,
@@ -114,9 +117,11 @@ const Chart = () => {
                             <Bar dataKey="revenue" fill="#82ca9d" />
                         </BarChart>
                     </div>
-
+                </div>
+                <div className='flex flex-col items-center justify-center bg-blue-100 p-2 mx-3 shadow rounded-lg my-3 '>
                     <div>
                         <h1 className='text-2xl font-semibold my-5 text-blue-700'>Investment vs Revenue</h1>
+
                         <PieChart width={350} height={350}>
                             <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
                             <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
@@ -125,7 +130,7 @@ const Chart = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 };
