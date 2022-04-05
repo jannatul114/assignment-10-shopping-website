@@ -13,7 +13,7 @@ const Reviews = () => {
                 <div className='container grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-12 mt-9 sm:container'>
                     {
                         reviews.map(review =>
-                            <div className="flex flex-col items-center justify-center bg-blue-100 p-4 shadow rounded-lg my-3 border-gray-700 border-4 ">
+                            <div className="flex flex-col items-center justify-center bg-blue-100 p-4 shadow rounded-lg my-3 border-gray-700 border-4 mx-7">
                                 <div className="inline-flex shadow-lg rounded-full overflow-hidden h-40 w-40 border-gray-700 border-4">
                                     <img src={review.img}
                                         alt=""
@@ -21,7 +21,7 @@ const Reviews = () => {
                                 </div>
 
                                 <h2 className="mt-4 font-bold text-xl">{review.name}</h2>
-                                <p className="text-s text-gray-600 text-center mt-3 font-semibold">
+                                <p className="text-s text-gray-500 text-center mt-3 font-semibold">
                                     {review.review}
                                 </p>
                                 <p>⭐️⭐️⭐️⭐️</p>
